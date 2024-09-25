@@ -1,0 +1,46 @@
+.loaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f7f7f7; /* Light background color */
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;  /* Adjusted width for better appearance */
+    height: 20px; /* Adjusted height for better appearance */
+    margin: 0 6px; /* Adjusted margin for better spacing */
+    border-radius: 50%;
+    background-color: #0070f3; /* Customize your color */
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s; /* Delay for second dot */
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s; /* Delay for third dot */
+}
+
+.loadingText {
+    margin-top: 12px; /* Adjusted margin for better spacing */
+    font-size: 1.2rem;
+    color: #555; /* Darker text color for contrast */
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px); /* Reduced bounce height for smoother animation */
+    }
+}

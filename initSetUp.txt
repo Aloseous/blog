@@ -1,0 +1,3 @@
+npx prisma init --datasource-provider mondodb
+
+To view prisma in browser run the cmd -> npx prisma studio
