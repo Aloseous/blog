@@ -11,7 +11,7 @@ const Footer = () => {
           <span style={{ color: 'red', fontSize: '32px' }}>D</span>-AILY
         </div>
         <p className={styles.desc}>
-          Welcome to "Discover the World," a blog dedicated to exploring the beauty and diversity of our planet.
+          Welcome to Discover the World, a blog dedicated to exploring the beauty and diversity of our planet.
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
