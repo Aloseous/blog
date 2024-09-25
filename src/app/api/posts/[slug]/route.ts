@@ -1,7 +1,8 @@
 import prisma from "@/utils/connect";
 import { NextResponse } from "next/server";
+import { NextRequest } from "next/server";  // Importing the correct type for req
 
-export const GET = async ({ params }: { params: { slug: string } }): Promise<NextResponse> => {
+export const GET = async (req: NextRequest, { params }: { params: { slug: string } }): Promise<NextResponse> => {
     const { slug } = params;
 
     try {
