@@ -10,12 +10,13 @@ export default function Home({ searchParams }: { searchParams: { page?: string }
 
   return (
     <div className={styles.container}>
-      <Featured />
+      Welcome to the blog
+      {/* <Featured />
       <CategoryList />
       <div className={styles.content}>
         <CardList cat="" />
         <Menu />
-      </div>
+      </div> */}
     </div>
   );
 }
